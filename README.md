@@ -1,0 +1,1 @@
+odoo_module_install_script
