@@ -22,7 +22,7 @@ def  main(list):
     passwd = Config.get('database', 'passwd')
 
     # Prepare the connection to the server
-    odoo = odoorpc.ODOO('localhost', port=8069)    
+    odoo = odoorpc.ODOO(host, port)    
 
     # Check if db_name exist in db list
     if db_name not in odoo.db.list():
